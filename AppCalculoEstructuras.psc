@@ -24,6 +24,7 @@ Algoritmo AppCalculoEstructuras
 		
 		Escribir "Indique el material que desea verificar:"
 		//En versión final, incluir un menú previo para seleccionar si desea calcular o verificar una estructura.
+		//Actualmente solo está disponible el predimensionado de vigas.
 		Escribir "+-------------------+"
 		Escribir "|     1. Acero      |"
 		Escribir "+-------------------+"
@@ -36,8 +37,6 @@ Algoritmo AppCalculoEstructuras
 		Leer op1
 		
 		Si op1 = 1 Entonces
-			//En versión final, incluir un menú donde seleccionar entre predimensionado de vigas y columnas.
-			//Actualmente solo está disponible el predimensionado de vigas.
 			Escribir "+-------------------------------+"
 			Escribir "| Ingrese los siguientes datos: |"
 			Escribir "+-------------------------------+"
@@ -240,8 +239,10 @@ Algoritmo AppCalculoEstructuras
 		Fin Mientras
 		
 	Hasta Que op1 = 0 o op2 = 2
+	
 	Escribir " "
 	Escribir "+-------------------------------------+"
 	Escribir "|     ¡Gracias por usar E-Calc!       |"
 	Escribir "+-------------------------------------+"
+	
 FinAlgoritmo
